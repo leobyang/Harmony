@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harmony Wellness</title>
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Rubik", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1555465910-31f7f20a184d?q=80&w=990&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  min-height: 68%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-teal">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-hover-text-pale-green w3-teal">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#services" class="w3-button w3-block w3-teal">SERVICES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#pricing" class="w3-button w3-block w3-teal">PRICING</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-teal">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-left-align w3-padding-large w3-hide-small">
+    <span class="w3-text-white">
+      <a href="#where" class="w3-text-white" style="background-color: #000;padding: 4px 8px;">3065 RIDGEWAY DRIVE, UNIT 53</a>
+    </span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <img src="./logo_big_shadow.png"  style="width:100%;max-width:1800px;">
+  </div>
+  <div class="w3-display-bottomright w3-right-align w3-padding-large">
+    <span class="w3-text-black">
+      <a href="#hours" class="w3-text-white" style="background-color: #000;padding: 4px 8px;">BUSINESS HOURS</a>
+    </span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-pale-green w3-large">
+  
+<!-- Insurance Container -->
+<div class="w3-container" id="insurance">
+  <div class="w3-content" style="max-width:800px">
+    <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">INSURANCE</span></h5>
+    <p>Harmony Wellness accepts insurance for our registered acupuncture and massage therapy services.</p>
+    <p>We also support Direct Billing for the following insurance providers:</p>
+    <img src="./eclaims1.png"  style="width:100%;max-width:800px">
+    <img src="./sunlife.png"  style="width:100%;max-width:800px;">
+    <img src="./eclaims2.png"  style="width:100%;max-width:800px">      
+  </div>
+</div>
+
+<!-- Hours Container -->
+<div class="w3-container" id="hours">
+  <div class="w3-content" style="max-width:800px">
+    <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">HOURS</span></h5>
+    <table class="w3-table w3-bordered">
+      <tr>
+        <th></th>
+        <th>Opening Time</th>
+        <th>Closing Time</th>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>10:00 AM</td>
+        <td>2:00 PM</td>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>By Appointment</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>10:00 AM</td>
+        <td>6:00 PM</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>10:00 AM</td>
+        <td>6:00 PM</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>10:00 AM</td>
+        <td>6:00 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>10:00 AM</td>
+        <td>6:00 PM</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>10:00 AM</td>
+        <td>6:00 PM</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Pricing Container -->
+<div class="w3-container" id="pricing">
+  <div class="w3-content" style="max-width:800px">
+ 
+    <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">PRICING</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Acupuncture');" id="myLink">
+        <div class="w3-col s6 tablink">Acupuncture (RAC)</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Massage');">
+        <div class="w3-col s6 tablink">Massage (RMT)</div>
+      </a>
+    </div>
+
+    <div id="Acupuncture" class="w3-container menu w3-padding-16 w3-card">
+      <h7>30 MINUTES</h7>
+      <p class="w3-text-grey">$60</p><br>
+    
+      <h7>45 MINUTES</h7>
+      <p class="w3-text-grey">$75</p><br>
+    
+      <h7>(INTENSIVE ACUPUNCTURE TREATMENT FRONT AND BACK)</h7><br>
+
+      <h7>60 MINUTES</h7>
+      <p class="w3-text-grey">$95</p><br>
+    
+      <h7>(COMBINATION OF ACUPUNCTURE, TDP LAMP, MOXIBUSTION AND CUPPING)</h7>
+    </div>
+
+    <div id="Massage" class="w3-container menu w3-padding-16 w3-card">
+      <h8>(HST NOT INCLUDED)</h8><br>
+
+      <h7>30 MINUTES</h7>
+      <p class="w3-text-grey">$55</p><br>
+    
+      <h7>45 MINUTES</h7>
+      <p class="w3-text-grey">$75</p><br>
+    
+      <h7>60 MINUTES</h7>
+      <p class="w3-text-grey">$95</p><br>
+    
+      <h7>75 MINUTES</h7>
+      <p class="w3-text-grey">$120</p><br>
+    
+      <h7>90 MINUTES</h7>
+      <p class="w3-text-grey">$145</p><br>
+      
+      <h7>120 MINUTES</h7>
+      <p class="w3-text-grey">$175</p><br>
+
+      <h7>ADD-ON</h7>
+      <p class="w3-text-black">MASSAGE + FOOT REFLEXOLOGY THERAPY</p>
+      <p class="w3-text-grey">+$10</p>
+      <p class="w3-text-black">DEEP TISSUE MASSAGE</p>
+      <p class="w3-text-grey">+$10</p>
+    </div>  
+
+    <div class="w3-content" style="max-width:800px">
+      <h8 class="w3-center w3-padding-48">
+      <p>*ALL SERVICES HAVE NO CANCELLATION FEES</p>
+    </div>
+  </div>
+</div>
+
+<!-- Services Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:800px">
+    <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">SERVICES</span></h5>
+    <h5 class="w3-center w3-padding-16">ACUPUNCTURE</h5>
+    <p>Acupuncture is a therapeutic metho which inserts the fine needles into a patient's body at various specific points along the energy pathways called meridians to prevent and treat a wide range of health problems. Acupuncture is proved to be an effective, safe and complementary to medications or even surgery for a variety of conditions and illnesses. Our clinic uses only high quality sterile single use needles.</p>
+    <img src="https://my.clevelandclinic.org/-/scassets/images/org/health/articles/4767-acupuncture" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <h5 class="w3-center w3-padding-16">TRADITIONAL CHINESE HERBAL MEDICINE (TCM)</h5>
+    <p>Traditional Chinese Herbal Medicine, one of the oldest continually practiced medicines, uses the natural properties (cold, cool, hot, warm, neutral) and flavours (pungent, sour, sweet, salty, bitter and bland) of natural medicinal substances to restore and balance the entire body. It is prescribed as a standard remedy or modified remedy to suit the individual patient's condition.</p>
+    <img src="https://www.ctnaturalhealth.com/wp-content/uploads/2019/04/chineseMedicine.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <h5 class="w3-center w3-padding-16">BENEFITS OF ACUPUNCTURE AND TRADITIONAL CHINESE HERBAL MEDICINE</h5>
+    <ul>
+      <li>Relieve pain</li>
+      <li>Improve the function of immune system</li>
+      <li>Balance, harmonize and strengthen the activity of the internal organ</li>
+      <li>Relax and strengthen the muscular and skeletal system</li>
+      <li>Calm the mind, relieve anxiety and nervousness</li>
+      <li>Harmonize energy</li>
+    </ul>    
+  </div>
+</div>
+
+<!-- Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:800px">
+    <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at: 3065 Ridgeway Drive Unit #53, Mississauga, ON L5L 5M6</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.1866197247787!2d-79.69227508752128!3d43.519300970988226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43a9679544c1%3A0xebdb3a39fc580cac!2sHarmony%20Wellness%20Center!5e0!3m2!1sen!2sca!4v1722520244585!5m2!1sen!2sca" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+<!-- Contact Container-->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:800px">
+    <h5 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">CONTACT US</span></h5>
+    <p>To book an appointment with us, call us or leave a message at: +1 (905) 698-0315</p>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
